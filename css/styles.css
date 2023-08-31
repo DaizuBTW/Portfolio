@@ -140,7 +140,9 @@ label:hover {
 .contacts {
     display: flex;
     align-items: end;
-    height: 20vh !important;
+    height: 200px !important;
+    margin-top: 100px;
+    padding-bottom: 50px;
 }
 
 .bottom-block {

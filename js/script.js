@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     home.style.height = '465px';
     about.style.height = '411px';
     services.style.height = '533px';
+    portfolio.style.hright = '371px';
     document.documentElement.style.setProperty('--text-size', '28px');
     document.documentElement.style.setProperty('--h3-size', '36px');
     document.documentElement.style.setProperty('--nava-size', '22px');
@@ -36,6 +37,8 @@ function myFunction() {
 
 
 let rus = {
+    btn_1: 'Нанять меня',
+    btn_2: 'Связаться',
     home: 'Главная',
     home_text: 'Мне 22 года, живу в Республике Беларусь (г. Минск). Самостоятельно изучал программирование ещё со школьных лет, и около года назад я начал профессиональное обучение языку Java. Сейчас, помимо Английского языка, начинаю изучать Польский. Надеюсь на сотрудничество с вами!',
     abilities_btn: 'Умения',
@@ -56,13 +59,17 @@ let rus = {
     services: 'Услуги',
     portfolio: 'Портфолио',
     portfolio_h3: 'Мои проекты <i class=\'bx bxl-github\'></i>',
+    port_1: ' - Этот сайт написан в целях обучения, он использует Spring и Hibernate.',
+    port_2: ' - Интернет магазин товаров для свечеварения, был создан при помощи Tilda.cc. В нем, большая часть работы заключалась в написании CSS кода.',
     contacts: 'Контакты',
     hello: 'Привет, я Данила Сельванович',
     dev: 'Backend Java Разработчик',
-    lorem: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.',
+    tel: 'тел: +375(29)277-08-41',
 };
   
   let eng = {
+    btn_1: 'Hire Me',
+    btn_2: 'Let\'s Talk',
     home: 'Home',
     home_text: 'I am 22 years old, I live in the Republic of Belarus (Minsk). I have been studying programming on my own since school years, and about a year ago I started professional training in the Java language. Now, in addition to English, I\'m starting to learn Polish. I hope to cooperate with you!',
     abilities_btn: 'Abilities',
@@ -84,10 +91,12 @@ let rus = {
     services: 'Services',
     portfolio: 'Portfolio',
     portfolio_h3: 'My projects <i class=\'bx bxl-github\'></i>',
+    port_1: ' - This is a website written for educational purposes, it uses Spring and Hibernate.',
+    port_2: ' - The online store of goods for candle making, was created with the help of Tilda.cc . In it, most of the work involved writing CSS code.',
     contacts: 'Contacts',
     hello: 'Hi, i\'m Danila Selvanovich',
     dev: 'Backend Java Developer',
-    lorem: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores animi nulla maxime praesentium, aut iure, in neque nobis non odio labore, iste nostrum cumque alias pariatur. Provident et repellendus incidunt!'
+    tel: 'tel: +375(29)277-08-41'
 };
   
   changeLagnuage();
@@ -106,6 +115,7 @@ let rus = {
       home.style.height = lang.checked ? '532px' : '465px';
       about.style.height = lang.checked ? '512px' : '411px';
       services.style.height = lang.checked ? '533px' : '533px';
+      portfolio.style.height = lang.checked ? '405px' : '371px';
     }
     document.querySelectorAll('[text]').forEach(el => {
       el.innerHTML = language[el.getAttribute('text')];
