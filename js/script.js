@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function(event) { 
+  /*ПОЛУЧАЕТ ТЕКУЩУЮ ШИРИНУ ЭКРАНА*/
+  var widthWind = document.querySelector('body').offsetWidth;
+  const element1 = document.querySelector('body');
+  const element2 = document.querySelector('.header');
+  const home = document.querySelector('.home');
+  if (widthWind <= 920) {
+    element1.style.padding = '0 5%';
+    element2.style.padding = '20px 5%';
+    home.style.height = '313px';
+    home.style.margin = '150px 0 0 0';
+  }
+});
+
+
+
+
+
 let rus = {
     home: 'Главная',
     abilities_btn: 'Умения',

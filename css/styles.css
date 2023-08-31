@@ -113,21 +113,22 @@ label:hover {
 .block {
     display: flex;
     align-items: end;
-    height: 30vh;
+    margin-top: 100px;
 }
 
 .home {
-    height: 35vh !important;
+    height: 295px;
+    margin-top: 200px;
     justify-content: left;
 }
 
 .about {
-    height: 30vh !important;
+    height: 312px;
     justify-content: right;
 }
 
 .services{
-    height: 30vh !important;
+    height: 351px;
     justify-content: left;
 }
 
