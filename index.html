@@ -12,7 +12,7 @@
         <header class="header">
             <a href="#" class="logo">Danila Selvanovich</a>
 
-            <nav class="navbar">
+            <nav class="navbar" id="myNavbar">
                 <a href="#top" class="active" text="home">Home</a>
                 <a href="#abilities" text="abilities_btn">Abilities</a>
                 <a href="#skills" text="skills_btn">Skills</a>
@@ -20,6 +20,7 @@
                 <a href="#contacts" text="contacts">Contacts</a>
                 <input id="lang" type='checkbox' onclick="changeLagnuage()">
                 <label for="lang" class="rus">Rus</label><label for="lang" class="eng">Eng</label>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class='bx bx-menu' ></i></a>
             </nav>
         </header>
         <anchor id="home"></anchor>
@@ -73,7 +74,10 @@
             <div class="port-a home-content">
                 <h1 text="portfolio">Portfolio</h1>
                 <a href="https://github.com/DaizuBTW" text="portfolio_h3" class="ah" target="_blank">My projects <i class='bx bxl-github'></i></a><br/>
-                <a href="#">asda</a>
+                <ul class="port">
+                    <li><a href="#">News site</a><span> - This is a website written for educational purposes, it uses Spring and Hibernate</span></li>
+                    <li><a href="#">Ecolight.by</a><span> - The online store of goods for candle making, was created with the help of Tilda.cc . In it, most of the work consisted of writing CSS code.</span></li>
+                </ul>
                 
             </div>
         </section>

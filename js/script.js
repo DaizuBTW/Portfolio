@@ -4,12 +4,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const element1 = document.querySelector('body');
   const element2 = document.querySelector('.header');
   const home = document.querySelector('.home');
+  const about = document.querySelector('.about');
+  const services = document.querySelector('.services');
+  const portfolio = document.querySelector('.portfolio');
+  const contacts = document.querySelector('.contacts');
   if (widthWind <= 920) {
     element1.style.padding = '0 5%';
     element2.style.padding = '20px 5%';
-    home.style.height = '313px';
+    home.style.height = '465px';
+    about.style.height = '411px';
+    services.style.height = '533px';
+    document.documentElement.style.setProperty('--text-size', '28px');
+    document.documentElement.style.setProperty('--h3-size', '36px');
+    document.documentElement.style.setProperty('--nava-size', '22px');
+    document.documentElement.style.setProperty('--logo-size', '30px');
+    document.documentElement.style.setProperty('--porta-size', '28px');
   }
 });
+
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+      x.className += " responsive";
+  } else {
+      x.className = "navbar";
+  }
+}
 
 
 
@@ -79,9 +99,13 @@ let rus = {
     var widthWind = document.querySelector('body').offsetWidth;
     const home = document.querySelector('.home');
     const about = document.querySelector('.about');
+    const services = document.querySelector('.services');
+    const portfolio = document.querySelector('.portfolio');
+    const contacts = document.querySelector('.contacts');
     if (widthWind <= 920) {
-      home.style.height = lang.checked ? '361px' : '313px';
-      about.style.height = lang.checked ? '379px' : '312px';
+      home.style.height = lang.checked ? '532px' : '465px';
+      about.style.height = lang.checked ? '512px' : '411px';
+      services.style.height = lang.checked ? '533px' : '533px';
     }
     document.querySelectorAll('[text]').forEach(el => {
       el.innerHTML = language[el.getAttribute('text')];

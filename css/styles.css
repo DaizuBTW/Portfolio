@@ -11,6 +11,14 @@
     --color-secondary: #121211;
     --color-secondary: #181b1a;
     --color-text: #f4f2f1;
+
+    --h1-size: 56px;
+    --h3-size:32px;
+    --text-size: 16px;
+    --porta-size: 16px;
+    --a-size: 20px;
+    --nava-size: 18px;
+    --logo-size: 25px;
 }
 
 
@@ -55,7 +63,7 @@ label:hover {
 
 .logo {
     position: relative;
-    font-size: 25px;
+    font-size: var(--logo-size);
     color: var(--color-text);
     text-decoration: none;
     font-weight: 600;
@@ -74,11 +82,15 @@ label:hover {
 }
 
 .navbar a {
-    font-size: 18px;
+    font-size: var(--nava-size);
     color: var(--color-text);
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+}
+
+.navbar label {
+    font-size: var(--nava-size);
 }
 
 .navbar a:hover,
@@ -87,7 +99,7 @@ label:hover {
 }
 
 .portfolio a {
-    font-size: 18px;
+    font-size: var(--nava-size);
     color: var(--color-text);
     text-decoration:solid!important;
     font-weight: 500;
@@ -151,7 +163,7 @@ label:hover {
 
 .home-content h1 {
     position: relative;
-    font-size: 56px;
+    font-size: var(--h1-size);
     font-weight: 700;
     line-height: 1.2;
 }
@@ -170,7 +182,7 @@ label:hover {
 
 .home-content h3 {
     position: relative;
-    font-size: 32px;
+    font-size: var(--h3-size);
     font-weight: 700;
     color: var(--color-primary);
 }
@@ -189,7 +201,7 @@ label:hover {
 
 .port-a a {
     position: relative;
-    font-size: 32px;
+    font-size: var(--h3-size);
     font-weight: 700;
     text-decoration: underline !important;
     color: var(--color-primary);
@@ -213,7 +225,7 @@ label:hover {
 
 .home-content p {
     position: relative;
-    font-size: 16px;
+    font-size: var(--text-size);
     margin: 20px 0 40px;
 }
 
@@ -235,7 +247,7 @@ li span {
 
 .home-content li {
     position: relative;
-    font-size: 16px;
+    font-size: var(--text-size);
     margin: 20px 20px 10px;
     color: var(--color-primary);
 }
@@ -334,7 +346,7 @@ li span {
     background: transparent;
     border: 2px solid var(--color-primary);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: var(--a-size);
     color: var(--color-primary);
     text-decoration: none;
     z-index: 1;
@@ -384,7 +396,7 @@ li span {
     background: transparent;
     border: 2px solid var(--color-primary);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: var(--a-size);
     color: var(--color-primary);
     text-decoration: none;
     z-index: 1;
@@ -411,6 +423,45 @@ li span {
 .contacts-sci a:hover::before {
     width: 100%;
 }
+.navbar .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 920px) {
+    .navbar a{
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+      font-size: 22pt !important;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+}
+
+.navbar.responsive a {
+    float: none;
+    display: flex;
+    text-align: center;
+  }
+
+  .navbar.responsive {
+    float: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  
 
 #lang {
     display: none;
@@ -422,6 +473,10 @@ li span {
   label[for="lang"] {
     user-select: none;
     cursor: pointer;
+  }
+
+  .port a {
+    font-size: var(--porta-size) !important;
   }
 
 @keyframes showRight {
