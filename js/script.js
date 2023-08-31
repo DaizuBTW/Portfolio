@@ -67,13 +67,19 @@ let rus = {
 };
   
   changeLagnuage();
+
+  
   
   function changeLagnuage(){
     let language = lang.checked ? rus : eng;
-    let height = lang.checked ? '60vh' : '35vh';
+    var widthWind = document.querySelector('body').offsetWidth;
+    const home = document.querySelector('.home');
+    const about = document.querySelector('.about');
+    if (widthWind <= 920) {
+      home.style.height = lang.checked ? '361px' : '313px';
+      about.style.height = lang.checked ? '379px' : '312px';
+    }
     document.querySelectorAll('[text]').forEach(el => {
       el.innerHTML = language[el.getAttribute('text')];
     })
-    document.getElementsByClassName('block').style.height = height;
-    //document.getElementById('block').style.height = height;
   }
