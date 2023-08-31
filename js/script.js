@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     element1.style.padding = '0 5%';
     element2.style.padding = '20px 5%';
     home.style.height = '313px';
-    home.style.margin = '150px 0 0 0';
   }
 });
 
@@ -18,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 let rus = {
     home: 'Главная',
+    home_text: 'Мне 22 года, живу в Республике Беларусь (г. Минск). Самостоятельно изучал программирование ещё со школьных лет, и около года назад я начал профессиональное обучение языку Java. Сейчас, помимо Английского языка, начинаю изучать Польский. Надеюсь на сотрудничество с вами!',
     abilities_btn: 'Умения',
     abilities: 'Профессиональные Умения',
     abilities_h3: 'Краткий список моих навыков',
@@ -35,7 +35,8 @@ let rus = {
     skills_5: '<b>OS:</b> Windows.',
     services: 'Услуги',
     portfolio: 'Портфолио',
-    contact: 'Контакты',
+    portfolio_h3: 'Мои проекты <i class=\'bx bxl-github\'></i>',
+    contacts: 'Контакты',
     hello: 'Привет, я Данила Сельванович',
     dev: 'Backend Java Разработчик',
     lorem: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.',
@@ -43,6 +44,7 @@ let rus = {
   
   let eng = {
     home: 'Home',
+    home_text: 'I am 22 years old, I live in the Republic of Belarus (Minsk). I have been studying programming on my own since school years, and about a year ago I started professional training in the Java language. Now, in addition to English, I\'m starting to learn Polish. I hope to cooperate with you!',
     abilities_btn: 'Abilities',
     abilities: 'Professional abilities',
     abilities_h3: 'A short list of my skills',
@@ -50,6 +52,7 @@ let rus = {
     abilities_2: 'I make web applications using Java, HTML5, CSS3, JavaScript.',
     abilities_3: 'Able to learn new technologies rapidly.' ,
     abilities_4: 'Excellent communication and problem-solving skills.' ,
+    skills_btn: 'Skills',
     skills: 'Technical skills',
     skills_h3: 'The technologies I use',
     skills_1: '<b>Programming languages:</b> Java, HTML, CSS, JavaScript.',
@@ -60,7 +63,8 @@ let rus = {
 
     services: 'Services',
     portfolio: 'Portfolio',
-    contact: 'Contact',
+    portfolio_h3: 'My projects <i class=\'bx bxl-github\'></i>',
+    contacts: 'Contacts',
     hello: 'Hi, i\'m Danila Selvanovich',
     dev: 'Backend Java Developer',
     lorem: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores animi nulla maxime praesentium, aut iure, in neque nobis non odio labore, iste nostrum cumque alias pariatur. Provident et repellendus incidunt!'

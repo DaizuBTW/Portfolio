@@ -28,7 +28,7 @@ html {
 body {
     background: var(--color-background);
     color: var(--color-text);
-    padding: 0 15%;
+    padding: 0 20%;
 }
 
 label {
@@ -45,7 +45,7 @@ label:hover {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 15%;
+    padding: 20px 20%;
     background: var(--color-background);
     display: flex;
     justify-content: space-between;
@@ -80,17 +80,6 @@ label:hover {
     font-weight: 500;
     margin-left: 35px;
 }
-.portfolio a {
-    font-size: 18px;
-    color: var(--color-text);
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    
-}
-.portfolio a:hover {
-    color: var(--color-primary);
-}
 
 .navbar a:hover,
 .navbar a.active {
@@ -113,12 +102,12 @@ label:hover {
 .block {
     display: flex;
     align-items: end;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .home {
     height: 295px;
-    margin-top: 200px;
+    margin-top: 120px;
     justify-content: left;
 }
 
@@ -187,6 +176,30 @@ label:hover {
 }
 
 .home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-secondary);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.port-a a {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline !important;
+    color: var(--color-primary);
+}
+
+.port-a a:hover {
+    color: var(--color-text);
+}
+
+.port-a a::before {
     content: '';
     position: absolute;
     top: 0;
