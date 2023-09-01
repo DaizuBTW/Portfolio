@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.documentElement.style.setProperty('--h1-size', '28px');
     document.documentElement.style.setProperty('--h3-size', '24px');
     document.documentElement.style.setProperty('--nava-size', '20px');
-    document.documentElement.style.setProperty('--logo-size', '22px');
+    document.documentElement.style.setProperty('--logo-size', '20px');
     document.documentElement.style.setProperty('--porta-size', '22px');
   }
 });
