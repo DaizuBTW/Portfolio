@@ -14,11 +14,14 @@
 
     --h1-size: 56px;
     --h3-size:32px;
-    --text-size: 16px;
+    --text-size: 18px;
     --porta-size: 16px;
     --a-size: 20px;
     --nava-size: 18px;
     --logo-size: 25px;
+    --block-margin: 50px 0 0 0;
+    --home-margin: 150px 0 0 0;
+    --contacts-margin: 200px 0 0 0;
 }
 
 
@@ -114,12 +117,12 @@ label:hover {
 .block {
     display: flex;
     align-items: end;
-    margin-top: 50px;
+    margin: var(--block-margin);
 }
 
 .home {
     height: 295px;
-    margin-top: 120px;
+    margin: var(--home-margin);
     justify-content: left;
 }
 
@@ -142,7 +145,7 @@ label:hover {
     align-items: end;
     height: 200px !important;
     margin-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .bottom-block {
@@ -269,7 +272,7 @@ li span {
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;
-    width: 345px;
+    width: px;
     height: 50px;
 }
 

@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const element1 = document.querySelector('body');
   const element2 = document.querySelector('.header');
   const home = document.querySelector('.home');
+  const btns = document.querySelector('.btn-box');
   const about = document.querySelector('.about');
   const services = document.querySelector('.services');
   const portfolio = document.querySelector('.portfolio');
@@ -11,15 +12,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (widthWind <= 920) {
     element1.style.padding = '0 5%';
     element2.style.padding = '20px 5%';
-    home.style.height = '465px';
-    about.style.height = '411px';
-    services.style.height = '533px';
-    portfolio.style.hright = '371px';
-    document.documentElement.style.setProperty('--text-size', '28px');
-    document.documentElement.style.setProperty('--h3-size', '36px');
-    document.documentElement.style.setProperty('--nava-size', '22px');
-    document.documentElement.style.setProperty('--logo-size', '30px');
-    document.documentElement.style.setProperty('--porta-size', '28px');
+    home.style.height = '466px';
+    btns.style.width = 'px';
+    about.style.height = '369px';
+    services.style.height = '432px';
+    portfolio.style.hright = '360px';
+    btns.style.width = 'px';
+    document.documentElement.style.setProperty('--block-margin', '30px 0 0 0');
+    document.documentElement.style.setProperty('--home-margin', '70px 0 0 0');
+    document.documentElement.style.setProperty('--text-size', '18px');
+    document.documentElement.style.setProperty('--h1-size', '28px');
+    document.documentElement.style.setProperty('--h3-size', '24px');
+    document.documentElement.style.setProperty('--nava-size', '20px');
+    document.documentElement.style.setProperty('--logo-size', '22px');
+    document.documentElement.style.setProperty('--porta-size', '22px');
   }
 });
 
@@ -112,10 +118,10 @@ let rus = {
     const portfolio = document.querySelector('.portfolio');
     const contacts = document.querySelector('.contacts');
     if (widthWind <= 920) {
-      home.style.height = lang.checked ? '532px' : '465px';
-      about.style.height = lang.checked ? '512px' : '411px';
-      services.style.height = lang.checked ? '533px' : '533px';
-      portfolio.style.height = lang.checked ? '405px' : '371px';
+      home.style.height = lang.checked ? '539px' : '466px';
+      about.style.height = lang.checked ? '475px' : '369px';
+      services.style.height = lang.checked ? '483px' : '432px';
+      portfolio.style.height = lang.checked ? '382px' : '360px';
     }
     document.querySelectorAll('[text]').forEach(el => {
       el.innerHTML = language[el.getAttribute('text')];
