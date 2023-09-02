@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var widthWind = document.querySelector('body').offsetWidth;
   const element1 = document.querySelector('body');
   const element2 = document.querySelector('.header');
-  if (widthWind <= 920) {
+  if (widthWind <= 1370) {
     element1.style.padding = '0 5%';
     element2.style.padding = '20px 5%';
     document.documentElement.style.setProperty('--block-margin', '30px 0 0 0');
@@ -61,7 +61,7 @@ let rus = {
     contacts: 'Контакты',
     hello: 'Привет, я Данила Сельванович',
     dev: 'Backend Java Разработчик',
-    tel: 'тел: +375(29)277-08-41',
+    tel: 'тел: +375(29)277-08-41<br>@Danila Selvanovich',
 };
   
   let eng = {
@@ -94,7 +94,7 @@ let rus = {
     contacts: 'Contacts',
     hello: 'Hi, i\'m Danila Selvanovich',
     dev: 'Backend Java Developer',
-    tel: 'tel: +375(29)277-08-41'
+    tel: 'tel: +375(29)277-08-41<br>@Danila Selvanovich'
 };
   
   changeLagnuage();

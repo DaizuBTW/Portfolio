@@ -436,7 +436,7 @@ li span {
     display: none;
   }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 900px) {
     .navbar a{
       display: none;
     }
@@ -447,7 +447,7 @@ li span {
     }
   }
 
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 900px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
       position: absolute;
