@@ -22,6 +22,7 @@
     --block-margin: 50px 0 0 0;
     --home-margin: 150px 0 0 0;
     --contacts-margin: 200px 0 0 0;
+    --btns-width: 375px;
 }
 
 
@@ -272,7 +273,7 @@ li span {
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;
-    width: px;
+    width: var(--btns-width);
     height: 50px;
 }
 
@@ -382,7 +383,7 @@ li span {
 .home-sci {
     position: fixed;
     bottom: 40px;
-    width: 200px;
+    width: 240px;
     display: flex;
     justify-content: space-between;
     background: var(--color-background);

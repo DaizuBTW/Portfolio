@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const element1 = document.querySelector('body');
   const element2 = document.querySelector('.header');
   const home = document.querySelector('.home');
-  const btns = document.querySelector('.btn-box');
   const about = document.querySelector('.about');
   const services = document.querySelector('.services');
   const portfolio = document.querySelector('.portfolio');
@@ -13,11 +12,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     element1.style.padding = '0 5%';
     element2.style.padding = '20px 5%';
     home.style.height = '466px';
-    btns.style.width = 'px';
     about.style.height = '369px';
     services.style.height = '432px';
-    portfolio.style.hright = '360px';
-    btns.style.width = 'px';
+    portfolio.style.hright = '351px';
     document.documentElement.style.setProperty('--block-margin', '30px 0 0 0');
     document.documentElement.style.setProperty('--home-margin', '70px 0 0 0');
     document.documentElement.style.setProperty('--text-size', '18px');
@@ -26,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.documentElement.style.setProperty('--nava-size', '20px');
     document.documentElement.style.setProperty('--logo-size', '20px');
     document.documentElement.style.setProperty('--porta-size', '22px');
+    document.documentElement.style.setProperty('--btns-width', 'px');
   }
 });
 
@@ -46,7 +44,7 @@ let rus = {
     btn_1: 'Нанять меня',
     btn_2: 'Связаться',
     home: 'Главная',
-    home_text: 'Мне 22 года, в данный момент нахожусь в Республике Беларусь (г. Минск). Самостоятельно изучал программирование ещё со школьных лет, и около года назад я начал профессиональное обучение языку Java. Сейчас, помимо Английского языка, начинаю изучать Польский. Надеюсь на сотрудничество с вами!',
+    home_text: 'Мне 22 года, в данный момент нахожусь в Республике Беларусь (г. Минск). Самостоятельно изучал программирование ещё со времён школы, и около года назад я начал профессиональное обучение языку Java. Сейчас, неплохо знаю Английский и начинаю изучать Польский. Надеюсь на сотрудничество с вами!',
     abilities_btn: 'Умения',
     abilities: 'Профессиональные Умения',
     abilities_h3: 'Краткий список моих навыков',
@@ -67,6 +65,7 @@ let rus = {
     portfolio_h3: 'Мои проекты <i class=\'bx bxl-github\'></i>',
     port_1: ' - Этот сайт написан в целях обучения, он использует Spring и Hibernate.',
     port_2: ' - Интернет магазин товаров для свечеварения, был создан при помощи Tilda.cc. В нем, большая часть работы заключалась в написании CSS кода.',
+    port_upd: 'Портфолио постоянно обновляется:)',
     contacts: 'Контакты',
     hello: 'Привет, я Данила Сельванович',
     dev: 'Backend Java Разработчик',
@@ -77,7 +76,7 @@ let rus = {
     btn_1: 'Hire Me',
     btn_2: 'Let\'s Talk',
     home: 'Home',
-    home_text: 'I am 22 years old, currently located in the Republic of Belarus (Minsk). I have been studying programming on my own since school years, and about a year ago I started professional training in the Java language. Now, in addition to English, I\'m starting to learn Polish. Hope to cooperate with you!',
+    home_text: 'I am 22 years old, currently located in the Republic of Belarus (Minsk). I have been studying programming on my own since high school, and about a year ago I started professional training in the Java language. Now I know English quite well and am starting to learn Polish. Hope to cooperate with you!',
     abilities_btn: 'Abilities',
     abilities: 'Professional abilities',
     abilities_h3: 'A short list of my skills',
@@ -99,6 +98,7 @@ let rus = {
     portfolio_h3: 'My projects <i class=\'bx bxl-github\'></i>',
     port_1: ' - This is a website written for educational purposes, it uses Spring and Hibernate.',
     port_2: ' - The online store of goods for candle making, was created with the help of Tilda.cc . In it, most of the work involved writing CSS code.',
+    port_upd: 'Portfolio is constantly updating:)',
     contacts: 'Contacts',
     hello: 'Hi, i\'m Danila Selvanovich',
     dev: 'Backend Java Developer',
@@ -121,7 +121,7 @@ let rus = {
       home.style.height = lang.checked ? '539px' : '466px';
       about.style.height = lang.checked ? '475px' : '369px';
       services.style.height = lang.checked ? '483px' : '432px';
-      portfolio.style.height = lang.checked ? '382px' : '360px';
+      portfolio.style.height = lang.checked ? '499px' : '351px';
     }
     document.querySelectorAll('[text]').forEach(el => {
       el.innerHTML = language[el.getAttribute('text')];
