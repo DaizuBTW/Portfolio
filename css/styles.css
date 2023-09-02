@@ -122,18 +122,15 @@ label:hover {
 }
 
 .home {
-    height: 295px;
     margin: var(--home-margin);
     justify-content: left;
 }
 
 .about {
-    height: 312px;
     justify-content: right;
 }
 
 .services{
-    height: 351px;
     justify-content: left;
 }
 

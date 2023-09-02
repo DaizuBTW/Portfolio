@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (widthWind <= 920) {
     element1.style.padding = '0 5%';
     element2.style.padding = '20px 5%';
-    home.style.height = '466px';
+    /*home.style.height = '466px';
     about.style.height = '369px';
     services.style.height = '432px';
-    portfolio.style.hright = '351px';
+    portfolio.style.hright = '351px';*/
     document.documentElement.style.setProperty('--block-margin', '30px 0 0 0');
     document.documentElement.style.setProperty('--home-margin', '70px 0 0 0');
     document.documentElement.style.setProperty('--text-size', '18px');
