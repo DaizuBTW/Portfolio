@@ -3,18 +3,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var widthWind = document.querySelector('body').offsetWidth;
   const element1 = document.querySelector('body');
   const element2 = document.querySelector('.header');
-  const home = document.querySelector('.home');
-  const about = document.querySelector('.about');
-  const services = document.querySelector('.services');
-  const portfolio = document.querySelector('.portfolio');
-  const contacts = document.querySelector('.contacts');
   if (widthWind <= 920) {
     element1.style.padding = '0 5%';
     element2.style.padding = '20px 5%';
-    /*home.style.height = '466px';
-    about.style.height = '369px';
-    services.style.height = '432px';
-    portfolio.style.hright = '351px';*/
     document.documentElement.style.setProperty('--block-margin', '30px 0 0 0');
     document.documentElement.style.setProperty('--home-margin', '70px 0 0 0');
     document.documentElement.style.setProperty('--text-size', '18px');
@@ -24,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.documentElement.style.setProperty('--logo-size', '20px');
     document.documentElement.style.setProperty('--porta-size', '22px');
     document.documentElement.style.setProperty('--btns-width', 'px');
+    document.documentElement.style.setProperty('--home-width', '100%');
   }
 });
 
@@ -112,17 +104,6 @@ let rus = {
   function changeLagnuage(){
     let language = lang.checked ? rus : eng;
     var widthWind = document.querySelector('body').offsetWidth;
-    const home = document.querySelector('.home');
-    const about = document.querySelector('.about');
-    const services = document.querySelector('.services');
-    const portfolio = document.querySelector('.portfolio');
-    const contacts = document.querySelector('.contacts');
-    if (widthWind <= 920) {
-      home.style.height = lang.checked ? '539px' : '466px';
-      about.style.height = lang.checked ? '475px' : '369px';
-      services.style.height = lang.checked ? '483px' : '432px';
-      portfolio.style.height = lang.checked ? '499px' : '351px';
-    }
     document.querySelectorAll('[text]').forEach(el => {
       el.innerHTML = language[el.getAttribute('text')];
     })
